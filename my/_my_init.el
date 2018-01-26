@@ -12,9 +12,6 @@
 ;;  テーマ設定
 (load "my_theme.el")
 
-;;  パッケージのリポジトリ設定
-(load "my_package_repos.el")
-
 ;;  コーディングの設定
 (load "my_coding.el")
 
