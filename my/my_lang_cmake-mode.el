@@ -3,6 +3,4 @@
 ;;
 
 ;;  cmake-modeをインストールしてなかったらインストールする
-(unless (package-installed-p 'cmake-mode)
-  (package-install 'cmake-mode)
-  )
+(my-package-install 'cmake-mode)

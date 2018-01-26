@@ -3,9 +3,7 @@
 ;;
 
 ;;  csharp-modeをインストールしてなかったらインストールする
-(unless (package-installed-p 'csharp-mode)
-  (package-install 'csharp-mode)
-  )
+(my-package-install 'csharp-mode)
 
 (defun my-csharp-mode-init ()
   ;; コードスタイルはbsd

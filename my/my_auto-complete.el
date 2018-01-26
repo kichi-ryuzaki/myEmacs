@@ -2,9 +2,7 @@
 ;; 補間設定
 ;;
 
-(unless (package-installed-p 'auto-complete)
-  (package-install 'auto-complete)
-  )
+(my-package-install 'auto-complete)
 
 (require 'auto-complete)
 (global-auto-complete-mode t)

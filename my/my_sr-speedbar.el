@@ -3,9 +3,7 @@
 ;;
 
 ;;  インストールしてない場合はする
-(unless (package-installed-p 'sr-speedbar)
-  (package-install 'sr-speedbar)
-  )
+(my-package-install 'sr-speedbar)
 
 ;;  左側に出す
 (setq sr-speedbar-right-side nil)

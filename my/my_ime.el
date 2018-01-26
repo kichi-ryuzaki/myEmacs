@@ -3,9 +3,7 @@
 ;;
 
 ;; ddskkをインストールしてなかったらインストールする
-(unless (package-installed-p 'ddskk)
-  (package-install 'ddskk)
-  )
+(my-package-install 'ddskk)
 
 (when (require 'skk nil t)
   (global-set-key (kbd "C-x j") 'skk-mode)

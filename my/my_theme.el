@@ -7,9 +7,7 @@
 
 
 	  ;;  ample-themeをインストールしてなかったらインストールする
-	  (unless (package-installed-p 'base16-theme)
-		(package-install 'base16-theme)
-		)
+	  (my-package-install 'base16-theme)
 
 	  ;;  テーマ選択
 	  (load-theme 'base16-atelier-forest t)

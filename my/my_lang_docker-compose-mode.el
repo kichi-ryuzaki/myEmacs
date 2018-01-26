@@ -3,6 +3,4 @@
 ;;
 
 ;;  docker-compose-modeをインストールしてなかったらインストールする
-(unless (package-installed-p 'docker-compose-mode)
-  (package-install 'docker-compose-mode)
-  )
+(my-package-install 'docker-compose-mode)
