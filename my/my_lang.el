@@ -13,3 +13,6 @@
 
 ;;  docker-compose設定
 (load "my_lang_docker-compose-mode.el")
+
+;;  Markdown設定
+(load "my_lang_markdown-mode.el")
