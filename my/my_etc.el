@@ -11,6 +11,7 @@
 ;;  起動直後のメッセージ非表示
 (setq inhibit-startup-message t)
 (setq inhibit-startup-screen  t)
+(setq initial-scratch-message "")
 
 ;;  画面の右端で折り返さない
 (setq-default truncate-lines t)
