@@ -1,5 +1,4 @@
 # myEmacs
-(load-theme 'my-theme-dark t)  
 個人環境のメモとemacs設定ファイル
 ___
 
