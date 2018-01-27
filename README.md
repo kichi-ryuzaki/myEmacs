@@ -17,14 +17,19 @@ ___
 	```
 	# mkdir .emacs.d
 	```
-4. CMakeのインストール
+4. JDKのインストール
+	1. [サイト](http://www.oracle.com/technetwork/java/javase/downloads/index.html)からJDK 1.8をインストール
+5. PlantUMLのインストール
+	1. [サイト](http://plantuml.com)の[Download](http://plantuml.com/download)から[plantuml.jar](http://sourceforge.net/projects/plantuml/files/plantuml.jar/download)をダウンロード
+	2. ダウンロードしたplantuml.jarを.emacs.d下に移動
+6. CMakeのインストール
 	1. [サイト](https://cmake.org/)から最新版を取得しインストール
 	2. インストール先のbinフォルダを環境変数PATHに追加
-5. Perl
+7. Perl
 	1. [ActivePerl](https://www.activestate.com/activeperl)から最新版を取得してインストール
-6. Markdown
+8. Markdown
 	1. [サイト](https://daringfireball.net/projects/markdown/)から最新版を取得し、.emacs.dにMarkdown.plを展開
-7. Emacs
+9. Emacs
 	1. [サイト](http://ftp.gnu.org/pub/gnu/emacs/windows/)から最新のemacs-??.?-x86_64.tgzを取得し任意のフォルダに展開する
-	2. [同サイト](http://ftp.gnu.org/pub/gnu/emacs/windows/)からemacs-??-x86_64-deps.zipがあるなら取得し、binの中をemacsのbinの中に展開
-
+	2. [同サイト](http://ftp.gnu.org/pub/gnu/emacs/windows/)からemacs-??-x86_64-deps.zipがあるなら取得し、binの中をemacsのbinの中に展開  
+	※この時点ではまだ起動しないこと

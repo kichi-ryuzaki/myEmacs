@@ -16,3 +16,6 @@
 
 ;;  Markdown設定
 (load "my_lang_markdown-mode.el")
+
+;;  PlantUML設定
+(load "my_lang_plantuml-mode.el")
