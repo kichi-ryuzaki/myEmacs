@@ -49,7 +49,7 @@
  '(button ((t (:inherit (link)))))
  '(link ((t (:underline (:color foreground-color :style line) :foreground "#407ee7"))))
  '(link-visited ((t (:underline (:color foreground-color :style line) :foreground "#6666ea"))))
- '(fringe ((t (:background "#2c24"))))
+ '(fringe ((t (:background "#2c2421"))))
  '(header-line ((t (:foreground "#6666ea" :inherit (mode-line)))))
  '(tooltip ((t (:family "Migu 1M" :foundry "outline" :width normal :height 90 :weight normal :slant normal :foreground "systeminfotext" :background "systeminfowindow" :inherit (variable-pitch)))))
  ;;  フォーカスバッファのモードライン
@@ -64,6 +64,7 @@
  '(match ((t (:inverse-video t :foreground "#407ee7" :background "#2c2421"))))
  '(next-error ((t (:inherit (region)))))
  '(query-replace ((t (:inherit (isearch)))))
+
  )
 
 (provide-theme 'my-theme-dark)
