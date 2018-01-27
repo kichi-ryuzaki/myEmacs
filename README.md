@@ -32,3 +32,6 @@ ___
 	1. [GNUのwindows版emacsダウンロード用ftp](http://ftp.gnu.org/pub/gnu/emacs/windows/)から最新のemacs-??.?-x86_64.tgzを取得し任意のフォルダに展開する
 	2. [同サイト](http://ftp.gnu.org/pub/gnu/emacs/windows/)からemacs-??-x86_64-deps.zipがあるなら取得し、binの中をemacsのbinの中に展開  
 	※この時点ではまだ起動しないこと
+10. このリポジトリをclone
+	1. .emacs.d直下にこのリポジトリをclone  
+	※.emacs.d直下にinit.elが出来ていればOK
