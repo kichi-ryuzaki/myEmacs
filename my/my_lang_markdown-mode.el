@@ -6,7 +6,7 @@
 (my-package-install 'markdown-mode)
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-(setq markdown-command (concat "perl " (expand-file-name user-emacs-directory) "Markdown.pl"))
+(setq markdown-command "pandoc")
 
 ;;  markdown-preview-ewwをインストールしてなかったらインストールする
 (my-package-install 'markdown-preview-eww)

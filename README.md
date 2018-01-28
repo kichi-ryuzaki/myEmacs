@@ -1,5 +1,6 @@
 # myEmacs
 個人環境のメモとemacs設定ファイル
+
 ___
 
 ## インストール
@@ -24,14 +25,12 @@ ___
 6. CMakeのインストール
 	1. [CMakeのサイト](https://cmake.org/)から最新版を取得しインストール
 	2. インストール先のbinフォルダを環境変数PATHに追加
-7. Perlのインストール
-	1. [ActivePerlのサイト](https://www.activestate.com/activeperl)から最新版を取得してインストール
-8. Markdownのインストール
-	1. [DARING FIREBALLのサイト](https://daringfireball.net/)から[Markdown](https://daringfireball.net/projects/markdown/)の最新版を取得し、.emacs.dにMarkdown.plを展開
-9. Emacsのインストール
+7. Pandocのインストール
+	1. [Pandocのgitリポジトリ](https://github.com/jgm/pandoc)から[Pandoc](https://github.com/jgm/pandoc/releases)の最新版の.msiを取得し、インストール
+8. Emacsのインストール
 	1. [GNUのwindows版emacsダウンロード用ftp](http://ftp.gnu.org/pub/gnu/emacs/windows/)から最新のemacs-??.?-x86_64.tgzを取得し任意のフォルダに展開する
 	2. [同サイト](http://ftp.gnu.org/pub/gnu/emacs/windows/)からemacs-??-x86_64-deps.zipがあるなら取得し、binの中をemacsのbinの中に展開  
 	※この時点ではまだ起動しないこと
-10. このリポジトリをclone
+9. このリポジトリをclone
 	1. .emacs.d直下にこのリポジトリをclone  
 	※.emacs.d直下にinit.elが出来ていればOK
