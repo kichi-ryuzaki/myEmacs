@@ -34,3 +34,6 @@ ___
 9. このリポジトリをclone
 	1. .emacs.d直下にこのリポジトリをclone  
 	※.emacs.d直下にinit.elが出来ていればOK
+
+## 引用
+* [my/markdown/github.css](https://gist.github.com/andyferra/2554919)

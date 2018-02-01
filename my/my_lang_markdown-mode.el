@@ -6,7 +6,7 @@
 (my-package-install 'markdown-mode)
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-(setq markdown-command "pandoc")
+(setq markdown-command (concat "pandoc --self-contained --quiet -c " (concat (expand-file-name user-emacs-directory) "my/markdown/github.css")))
 
 ;;  markdown-preview-ewwをインストールしてなかったらインストールする
 (my-package-install 'markdown-preview-eww)
