@@ -19,3 +19,6 @@
 
 ;;  PlantUML設定
 (load "my_lang_plantuml-mode.el")
+
+;;  go-mode設定
+(load "my_lang_go-mode.el")

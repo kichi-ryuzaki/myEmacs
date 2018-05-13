@@ -21,6 +21,9 @@
 ;;  IME設定
 (load "my_ime.el")
 
+;;  google 翻訳
+(load "my_translate.el")
+
 ;;  スピードバー設定
 (load "my_sr-speedbar.el")
 
