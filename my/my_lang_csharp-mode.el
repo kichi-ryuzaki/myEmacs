@@ -26,6 +26,9 @@
   ;;  case直後の{はインデントかける
   (c-set-offset 'statement-case-open '+)
 
+  ;;  コメント展開は無視
+  (local-unset-key (kbd "/"))
+
   ;;  自動補間有効
   (auto-complete-mode t)
   )
