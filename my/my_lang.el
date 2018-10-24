@@ -22,3 +22,6 @@
 
 ;;  go-mode設定
 (load "my_lang_go-mode.el")
+
+;;  shader-mode設定
+(load "my_lang_shader-mode.el")
