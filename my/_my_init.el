@@ -36,7 +36,9 @@
 ;;  もろもろの細かい設定
 (load "my_etc.el")
 
-
+;;  Git関連
+(load "my_git.el")
 
 ;;  言語モード設定
 (load "my_lang.el")
+
