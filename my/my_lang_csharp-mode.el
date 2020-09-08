@@ -31,6 +31,10 @@
 
   ;;  自動補間有効
   (auto-complete-mode t)
+
+  ;;  コメントなんかを入力したり文字列を入力するとインデントがおかしくなる問題の対策
+  (defun  c-clear-string- fences ()
+    " yasnippetを壊すため、この関数はnullにされます。そして、引用するときは明らかにcsharp-modeです。")
   )
 
 (add-to-list 'ac-modes 'csharp-mode)
