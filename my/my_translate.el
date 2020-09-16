@@ -2,6 +2,9 @@
 ;; 翻訳
 ;;
 
+;; 依存関係にあるソース
+(my-package-install 'popup)
+
 ;; google翻訳
 (my-package-install 'google-translate)
 

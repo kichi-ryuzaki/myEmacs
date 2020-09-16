@@ -20,6 +20,11 @@
   ;; 勝手な改行はさせない
   (auto-fill-mode -1)
 
+  (c-set-offset 'substatement-open 0)
+  (c-set-offset 'case-label '+)
+  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-close 0)
+
   ;; 式を複数行にした時の行頭揃え
   (c-set-offset 'statement-cont 'c-lineup-math)
 

@@ -6,7 +6,7 @@
  ;;  カーソル色
  '(cursor ((t (:background "#602c40"))))
  ;;  通常文字色
- '(default ((t (:inherit nil :stipple nil :background "#1b1928" :foreground "#a8a19f" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "outline" :family "Migu 1M"))))
+ '(default ((t (:inherit nil :stipple nil :background "#000000" :foreground "#a8a19f" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "outline" :family "Migu 1M"))))
 
  ;;  固定ピッチ
  '(fixed-pitch ((t (:slant normal :weight bold :height 113 :width normal :foundry "outline" :family "Migu 1M"))))
