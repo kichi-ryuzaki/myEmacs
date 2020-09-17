@@ -96,3 +96,28 @@
 
 ;(global-set-key (kbd "C-c C-t") 'weblio)
 (global-set-key (kbd "C-c C-t") 'eijiro)
+
+;;; DeepL
+(require 'url-util)
+(defun my:deepl-translate (&optional string)
+  (interactive)
+  (setq string
+        (cond ((stringp string) string)
+              ((use-region-p)
+               (buffer-substring (region-beginning) (region-end)))
+              (t
+               (save-excursion
+                 (let (s)
+                   (forward-char 1)
+                   (backward-sentence)
+                   (setq s (point))
+                   (forward-sentence)
+                   (buffer-substring s (point)))))))
+  (run-at-time 0.1 nil 'deactivate-mark)
+  (browse-url
+   (concat
+    "https://www.deepl.com/translator#en/ja/"
+    (url-hexify-string string)
+    )))
+
+(global-set-key (kbd "C-c C-c") 'my:deepl-translate)
