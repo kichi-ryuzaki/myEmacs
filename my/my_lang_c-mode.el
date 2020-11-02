@@ -5,8 +5,8 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 (defun my-c-c++-mode-init ()
-  ;; コードスタイルはbsd
-  (c-set-style "bsd")
+  ;; コードスタイルはstroustrup
+  (c-set-style "stroustrup")
   ;; タブ幅4
   (setq c-basic-offset 4)
   ;; 左橋はインデント それ以外はタブコード
@@ -25,12 +25,21 @@
   ;; コンストラクタの変数初期化は関数の頭に揃える
   (c-set-offset 'member-init-intro 0)
 
+  ;;  コンストラクタのインデントは関数の頭にあわせる
+  (c-set-offset 'inline-open 0)
+
   ;;  case直後の{はインデントかける
   (c-set-offset 'statement-case-open '+)
 
   ;;  namespaceはインデント
   (c-set-offset 'innamespace '+)
+
+  ;;  unreal engineの自己展開型マクロのエスケープ
+  (add-to-list 'c-macro-names-with-semicolon
+			   "GENERATED_BODY"
+			   "GENERATED_UCLASS_BODY"
+			   "UFUNCTION"
+			   "UPROPERTY")
   )
 (add-hook 'c-mode-hook 'my-c-c++-mode-init)
 (add-hook 'c++-mode-hook 'my-c-c++-mode-init)
-
