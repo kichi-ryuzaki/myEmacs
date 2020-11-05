@@ -38,5 +38,5 @@
   (auto-complete-mode t)
   )
 
-(add-to-list 'ac-modes 'csharp-mode)
+;(add-to-list 'ac-modes 'csharp-mode)
 (add-hook 'csharp-mode-hook 'my-csharp-mode-init)

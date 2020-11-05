@@ -4,6 +4,27 @@
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
+;;  flycheck
+(my-package-install 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++17")))
+(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++17")))
+
+;; irony
+(my-package-install 'irony)
+(my-package-install 'flycheck-irony)
+(use-package flycheck
+			 :config
+			 (when (locate-library "flycheck-irony")
+			   (flycheck-irony-setup))
+			 (global-flycheck-mode t))
+(use-package irony
+			 :commands irony-mode
+			 :config
+			 (custom-set-variables '(irony-additional-clang-options '("-std=c++17")))
+			 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+			 (add-hook 'c-mode-common-hook 'irnoy-mode))
+
 (defun my-c-c++-mode-init ()
   ;; コードスタイルはstroustrup
   (c-set-style "stroustrup")
@@ -41,5 +62,4 @@
 			   "UFUNCTION"
 			   "UPROPERTY")
   )
-(add-hook 'c-mode-hook 'my-c-c++-mode-init)
-(add-hook 'c++-mode-hook 'my-c-c++-mode-init)
+(add-hook 'c-mode-common-hook 'my-c-c++-mode-init)

@@ -9,6 +9,9 @@
 ;;  user-emacs-directory "my")))
 ;;  (load "_my_init.el")
 
+;;  use-packageを有効に
+(my-package-install 'use-package)
+
 ;;  テーマ設定
 (load "my_theme.el")
 
@@ -38,6 +41,9 @@
 
 ;;  Git関連
 (load "my_git.el")
+
+;;  スニペット関係
+(load "my_snippet.el")
 
 ;;  言語モード設定
 (load "my_lang.el")
