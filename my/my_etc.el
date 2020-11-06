@@ -112,3 +112,7 @@
 			'("emacs " emacs-version (buffer-file-name " - %f")))
 
 	  ))
+
+;;--------------------------------------------------------------
+;;  ファイル名の補間を大文字小文字の区別なくさせる
+(setq read-file-name-completion-ignore-case t)

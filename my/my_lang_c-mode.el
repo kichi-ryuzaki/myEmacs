@@ -10,7 +10,23 @@
 (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++17")))
 (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++17")))
 
-;; irony
+;;  irony
+;;  ※Windows環境でironyサーバを用意するには以下
+;;  1) まず、msys2環境を用意
+;;  2) >pacman -Su で初期アップデート
+;;  3) >pacman -S mingw-w64-x86_64-clang
+;;  4) >pacman -S mingw-w64-x86_64-polly
+;;  5) >pacman -S mingw-w64-x86_64-clang-tools-extra
+;;  6) cmakeをインストールし、パスを通す
+;;  これを済ませたらemacs上で M-x irony-install-server
+;;  ※Linux環境でironyサーバを用意するには以下
+;;  1) >sudo apt update
+;;  2) >sudo apt install llvm
+;;  3) >sudo apt install clang
+;;  4) >sudo apt install libclang-dev
+;;  5) >sudo apt install make
+;;  6) >suto apt install cmake
+;;  これを済ませたらemacs上で M-x irony-install-server
 (my-package-install 'irony)
 (my-package-install 'flycheck-irony)
 (use-package flycheck
@@ -23,7 +39,7 @@
 			 :config
 			 (custom-set-variables '(irony-additional-clang-options '("-std=c++17")))
 			 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-			 (add-hook 'c-mode-common-hook 'irnoy-mode))
+			 (add-hook 'c-mode-common-hook 'irony-mode))
 
 (defun my-c-c++-mode-init ()
   ;; コードスタイルはstroustrup
@@ -56,10 +72,10 @@
   (c-set-offset 'innamespace '+)
 
   ;;  unreal engineの自己展開型マクロのエスケープ
-  (add-to-list 'c-macro-names-with-semicolon
-			   "GENERATED_BODY"
-			   "GENERATED_UCLASS_BODY"
-			   "UFUNCTION"
-			   "UPROPERTY")
+  (setq c-macro-names-with-semicolon
+		'("GENERATED_BODY"
+		  "GENERATED_UCLASS_BODY"
+		  "UFUNCTION"
+		  "UPROPERTY"))
   )
 (add-hook 'c-mode-common-hook 'my-c-c++-mode-init)

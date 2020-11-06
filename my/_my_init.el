@@ -48,3 +48,4 @@
 ;;  言語モード設定
 (load "my_lang.el")
 
+(set-face-attribute 'default nil :height 120)
