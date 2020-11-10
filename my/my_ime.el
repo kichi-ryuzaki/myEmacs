@@ -10,6 +10,7 @@
   (setq default-input-method "japanese-skk")
   (require 'skk-study)
   )
+(require 'skk)
 
 ;;  IME無効/有効時のカーソルカラー定義
 (unless (facep 'cursor-ime-off)

@@ -35,5 +35,11 @@ ___
 	1. .emacs.d直下にこのリポジトリをclone  
 	※.emacs.d直下にinit.elが出来ていればOK
 
+## 追記 Windows環境でのirony-install-server
+
+Visual C++やcmakeなどのインストールを行ない、`irony-install-server` のcmakeのコマンドを手動で打つ。  
+この時にbuild対象にするのは [ここ](https://github.com/Sarcasm/irony-mode) のserver下。
+
+
 ## 引用
 * [my/markdown/github.css](https://gist.github.com/andyferra/2554919)
